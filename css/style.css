@@ -1,6 +1,9 @@
 ul, ol { 
 	list-style-type: none;
 }
+p {
+	margin:0;padding:0;
+}
 a:link { 
 	color: #515151;
 	text-decoration:none;
@@ -11,7 +14,7 @@ a:link {
 	left: 0; 
 	top: 0; 
 	z-index: 1; 
-	background: rgba(0,0,0,0.8); 
+	background: #da4a4a; 
 	color: white; 
 	width: 100%; 
 	height: 60px; 
@@ -27,10 +30,9 @@ a:link {
 
 .center-wrap {
 	position: relative;
-	z-index: 1; 
-	width: 1040px; 
-	height: 100%; 
-	margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 .center-wrap nav{
 	float:left; 
@@ -40,13 +42,19 @@ a:link {
 	float: left;
 }
 .center-wrap nav .myMenu li:active a{
-	background: #868e63; color: #000;
+	margin: 0 auto;
+	background-image: url("../img/1.png");
 }
 .center-wrap nav .myMenu li a {
+	text-align: center;
 	display: block;  padding: 0 20px; line-height: 60px; cursor:pointer; color: #ffffff;
 }
 .center-wrap nav .myMenu li a:hover {
-	background: #868e63; color: #000;  
+	/*width: 100%;
+	height: 100%;
+	margin: 0 auto;*/
+
+	background: url("../img/1.png")  no-repeat center top 18px;
 }
 .center-wrap .buy-now {
 	position: absolute; 
@@ -58,4 +66,35 @@ a:link {
 }
 .center-wrap .buy-now:hover {
 	color: #fff;
+}
+
+
+.searchSet {
+	width:330px;
+	height:20px;
+	padding:10px 5px;
+	border:0;
+}
+.searchSet:focus {
+	outline:0;
+	background:#fff;
+	box-shadow:0 0 2px rgba（0，0，0，.8） inset;
+}
+
+.searchSet: :-webkit-input-placeholder {
+	color:#999;
+	font-weight:normal;
+	font-style:italic;
+}
+
+.searchSet:-moz-placeholder {
+	color:#999;
+	font-weight:normal;
+	font-style:italic;
+}
+
+.searchSet:-ms-input-placeholder {
+	color:#999;
+	font-weight:normal;
+	font-style:italic;
 }
