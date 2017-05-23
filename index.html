@@ -6,6 +6,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/waterfall.js"></script>
   </head>
   <body style="margin:0;">
   	<div style="width: 100%;height: 100%;">
@@ -30,31 +32,215 @@
 		  	  </div>			 
 		  </div>
 		</div>
-		<div style="margin: 0 auto;height: 100%;width: 80%;padding-top:60px;">
-			<div style="width:19%;float:left;border:1px solid red;">
-				<div>
-					<p style="border-left:3px solid red;height:30px;width:1px;float:left;"></p>
+		<div style="margin: 0 auto;height: 100%;width: 80%;padding-top:60px;">	
+			<!-- 左侧 -->
+			<div style="width:19%;float:left;border:1px solid #eeeeee;">	
+				<!-- 购买 -->
+				<div style="width:100%;margin: 5% 0 5% 0;">
+					<p style="border-left:3px solid #da4a49;height:30px;width:1px;float:left;"></p>
 					<p style="color:#000;line-height: 29px;font-size: 16px;">他们正在购买</p>
-				</div>
-				<div>
-					<div>
+				</div>		
+				<div style="width:100%;border-bottom:1px dashed #eeeeee;margin-top: 5%;">
+					<div style="width:95%;margin-left: 5%;">
 						<p>ZC软件刚购买了国际简约大气名片...</p>
 					</div>
-					<div>
+					<div style="width:100%;height: 150px;">
 						<div style="width: 100px;margin: 5%;float: left;height: 100px;">
-							<img src="img/min_1.jpg" alt="" style="width: 100%;height: 100%;">
+							<img src="img/min_1.jpg" alt="" style="width: 100%;height: 100%;"/>
 						</div>
 						<div style="width: 50%;margin-top: 5%;height: 100px;float: left;">
-							<p style="padding-top: 25px;">售价</p>
-							<p style="padding-bottom: 25px;">购买</p>
+							<p style="padding-top: 25px;padding-bottom: 25px;">售价：<span style="color:red">￥8.00</span>元</p>
+							<p style="padding-bottom: 25px;">购买：<span style="color:red">9</span>次</p>
 						</div>						
 					</div>
 				</div>
 				<p style="clear:both;"></p>
-				<div>3</div>
-				<div>4</div>
-			</div>
-  			<div style="background:bule;width:80%;float:left;border:1px solid yellow;">2</div>
+				<div style="width:100%;border-bottom:1px dashed #eeeeee;margin-top: 10%;">
+					<div style="width:100%;margin-top: 5%;">
+						<div style="width:95%;margin-left: 5%;">
+							<p>pomoa刚购买了高端名牌设计</p>
+						</div>
+						<div style="width:100%;height: 150px;">
+							<div style="width: 100px;margin: 5%;float: left;height: 100px;">
+								<img src="img/min_2.jpg" alt="" style="width: 100%;height: 100%;"/>
+							</div>
+							<div style="width: 50%;margin-top: 5%;height: 100px;float: left;">
+								<p style="padding-top: 25px;padding-bottom: 25px;">售价：<span style="color:red">￥8.00</span>元</p>
+								<p style="padding-bottom: 25px;">购买：<span style="color:red">13</span>次</p>
+							</div>						
+						</div>
+					</div>
+				</div>
+				<div style="width:100%;border-bottom:1px solid #eeeeee;margin-top: 10%;">
+					<div style="width:100%;margin-top: 5%;">
+						<div style="width:95%;margin-left: 5%;">
+							<p>pomoa刚购买了高端名牌设计</p>
+						</div>
+						<div style="width:100%;height: 150px;">
+							<div style="width: 100px;margin: 5%;float: left;height: 100px;">
+								<img src="img/min_3.jpg" alt="" style="width: 100%;height: 100%;"/>
+							</div>
+							<div style="width: 50%;margin-top: 5%;height: 100px;float: left;">
+								<p style="padding-top: 25px;padding-bottom: 25px;">售价：<span style="color:red">￥8.00</span>元</p>
+								<p style="padding-bottom: 25px;">购买：<span style="color:red">13</span>次</p>
+							</div>						
+						</div>
+					</div>
+				</div>
+				<!-- 上传 -->
+				<div style="width:100%;margin: 5% 0 5% 0;">
+					<p style="border-left:3px solid #da4a49;height:30px;width:1px;float:left;"></p>
+					<p style="color:#000;line-height: 29px;font-size: 16px;">他们正在上传</p>
+				</div>		
+				<div style="width:100%;border-bottom:1px dashed #eeeeee;margin-top: 5%;">
+					<div style="width:95%;margin-left: 5%;">
+						<p>zyq默默刚上传了绿色玉器淘宝ban...</p>
+					</div>
+					<div style="width:100%;height: 150px;">
+						<div style="width: 100px;margin: 5%;float: left;height: 100px;">
+							<img src="img/min_4.jpg" alt="" style="width: 100%;height: 100%;"/>
+						</div>
+						<div style="width: 50%;margin-top: 5%;height: 100px;float: left;">
+							<p style="padding-top: 25px;padding-bottom: 25px;color:#0d73bd;">绿色玉器淘宝ban</p>
+							<p style="padding-bottom: 25px;">购买：<span style="color:red">9</span>次</p>
+						</div>						
+					</div>
+				</div>
+				<div style="width:100%;border-bottom:1px dashed #eeeeee;margin-top: 10%;">
+					<div style="width:100%;margin-top: 5%;">
+						<div style="width:95%;margin-left: 5%;">
+							<p>ricard刚上传了商业公司名片</p>
+						</div>
+						<div style="width:100%;height: 150px;">
+							<div style="width: 100px;margin: 5%;float: left;height: 100px;">
+								<img src="img/min_5.jpg" alt="" style="width: 100%;height: 100%;"/>
+							</div>
+							<div style="width: 50%;margin-top: 5%;height: 100px;float: left;">
+								<p style="padding-top: 25px;padding-bottom: 25px;color:#0d73bd;">商业公司名片</p>
+								<p style="padding-bottom: 25px;">购买：<span style="color:red">13</span>次</p>
+							</div>						
+						</div>
+					</div>
+				</div>
+				<div style="width:100%;border-bottom:1px dashed #eeeeee;margin-top: 10%;">
+					<div style="width:100%;margin-top: 5%;">
+						<div style="width:95%;margin-left: 5%;">
+							<p>zyq默默刚上传了绿色玉器淘宝ban...</p>
+						</div>
+						<div style="width:100%;height: 150px;">
+							<div style="width: 100px;margin: 5%;float: left;height: 100px;">
+								<img src="img/min_6.jpg" alt="" style="width: 100%;height: 100%;"/>
+							</div>
+							<div style="width: 50%;margin-top: 5%;height: 100px;float: left;">
+								<p style="padding-top: 25px;padding-bottom: 25px;color:#0d73bd;">时尚粉红花朵电视墙</p>
+								<p style="padding-bottom: 25px;">购买：<span style="color:red">13</span>次</p>
+							</div>						
+						</div>
+					</div>
+				</div>
+  			</div> 
+  			<!-- 右侧 -->
+  			<div style="width:80%;float:left;border:1px solid yellow;height: 100%;" id="main">
+  				<div style="padding:1% 0 0 3%;">
+	  				<div style="width:100%;">
+	  					<p style="color:#000;line-height: 29px;font-size: 16px;">75%以上的用户购买了这些</p>
+	  				</div>  				
+	  				<div style="width:100%;border:1px solid red;">	  					
+						<ul id="picList">
+							<li style="width:250px;border:1px solid #eeeeee;margin-bottom:4%;margin-right: 2%;float:left;">
+								<div style="background:#fff;">
+									<img src="http://placehold.it/250x495" style="padding:2%;width:240px;"/>
+								</div>								
+								<div style="background:#f5f4f2;padding: 2%;height: 30px;">
+									<p style="display: inline-block;padding-left: 2%;line-height: 29px;">￥8.00元</p>
+									<p style="display: inline-block;margin-left: 30%;line-height: 29px;">已出售<span style="color:#d94948;">3</span>次</p>
+								</div>								
+							</li>
+							<li style="width:250px;border:1px solid #eeeeee;margin-bottom:4%;float:left;margin-right: 2%;">
+								<div style="background:#fff;">
+									<img src="http://placehold.it/255x217" style="padding:2%;width:240px;"/>
+								</div>								
+								<div style="background:#f5f4f2;padding: 2%;height: 30px;">
+									<p style="display: inline-block;padding-left: 2%;line-height: 29px;">￥8.00元</p>
+									<p style="display: inline-block;margin-left: 30%;line-height: 29px;">已出售<span style="color:#d94948;">23</span>次</p>
+								</div>	
+							</li>
+							<li style="width:250px;border:1px solid #eeeeee;margin-bottom:4%;float:left;margin-right: 2%;">
+								<div style="background:#fff;">
+									<img src="http://placehold.it/244x261" style="padding:2%;width:240px;"/>
+								</div>								
+								<div style="background:#f5f4f2;padding: 2%;height: 30px;">
+									<p style="display: inline-block;padding-left: 2%;line-height: 29px;">￥8.00元</p>
+									<p style="display: inline-block;margin-left: 30%;line-height: 29px;">已出售<span style="color:#d94948;">23</span>次</p>
+								</div>	
+							</li>
+							<li style="width:250px;border:1px solid #eeeeee;margin-bottom:4%;float:left;margin-right: 2%;">
+								<div style="background:#fff;">
+									<img src="http://placehold.it/254x324" style="padding:2%;width:240px;"/>
+								</div>								
+								<div style="background:#f5f4f2;padding: 2%;height: 30px;">
+									<p style="display: inline-block;padding-left: 2%;line-height: 29px;">￥8.00元</p>
+									<p style="display: inline-block;margin-left: 30%;line-height: 29px;">已出售<span style="color:#d94948;">23</span>次</p>
+								</div>	
+							</li>
+							<li style="width:250px;border:1px solid #eeeeee;margin-bottom:4%;float:left;margin-right: 2%;">
+								<div style="background:#fff;">
+									<img src="http://placehold.it/260x543" style="padding:2%;width:240px;"/>
+								</div>								
+								<div style="background:#f5f4f2;padding: 2%;height: 30px;">
+									<p style="display: inline-block;padding-left: 2%;line-height: 29px;">￥8.00元</p>
+									<p style="display: inline-block;margin-left: 30%;line-height: 29px;">已出售<span style="color:#d94948;">23</span>次</p>
+								</div>	
+							</li>
+							<li style="width:250px;border:1px solid #eeeeee;margin-bottom:4%;float:left;margin-right: 2%;">
+								<div style="background:#fff;">
+									<img src="http://placehold.it/250x525" style="padding:2%;width:240px;"/>
+								</div>								
+								<div style="background:#f5f4f2;padding: 2%;height: 30px;">
+									<p style="display: inline-block;padding-left: 2%;line-height: 29px;">￥8.00元</p>
+									<p style="display: inline-block;margin-left: 30%;line-height: 29px;">已出售<span style="color:#d94948;">23</span>次</p>
+								</div>	
+							</li>						
+							<li style="width:250px;border:1px solid #eeeeee;margin-bottom:4%;float:left;margin-right: 2%;">
+								<div style="background:#fff;">
+									<img src="http://placehold.it/253x236" style="padding:2%;width:240px;"/>
+								</div>								
+								<div style="background:#f5f4f2;padding: 2%;height: 30px;">
+									<p style="display: inline-block;padding-left: 2%;line-height: 29px;">￥8.00元</p>
+									<p style="display: inline-block;margin-left: 30%;line-height: 29px;">已出售<span style="color:#d94948;">23</span>次</p>
+								</div>	
+							</li>
+							<li style="width:250px;border:1px solid #eeeeee;margin-bottom:4%;float:left;margin-right: 2%;">
+								<div style="background:#fff;">
+									<img src="http://placehold.it/260x209" style="padding:2%;width:240px;"/>
+								</div>								
+								<div style="background:#f5f4f2;padding: 2%;height: 30px;">
+									<p style="display: inline-block;padding-left: 2%;line-height: 29px;">￥8.00元</p>
+									<p style="display: inline-block;margin-left: 30%;line-height: 29px;">已出售<span style="color:#d94948;">23</span>次</p>
+								</div>	
+							</li>
+							<li style="width:250px;border:1px solid #eeeeee;margin-bottom:4%;float:left;margin-right: 2%;">
+								<div style="background:#fff;">
+									<img src="http://placehold.it/253x506" style="padding:2%;width:240px;"/>
+								</div>								
+								<div style="background:#f5f4f2;padding: 2%;height: 30px;">
+									<p style="display: inline-block;padding-left: 2%;line-height: 29px;">￥8.00元</p>
+									<p style="display: inline-block;margin-left: 30%;line-height: 29px;">已出售<span style="color:#d94948;">23</span>次</p>
+								</div>	
+							</li>
+							<li style="width:250px;border:1px solid #eeeeee;margin-bottom:4%;float:left;margin-right: 2%;">
+								<div style="background:#fff;">
+									<img src="http://placehold.it/250x364" style="padding:2%;width:240px;"/>
+								</div>								
+								<div style="background:#f5f4f2;padding: 2%;height: 30px;">
+									<p style="display: inline-block;padding-left: 2%;line-height: 29px;">￥8.00元</p>
+									<p style="display: inline-block;margin-left: 30%;line-height: 29px;">已出售<span style="color:#d94948;">23</span>次</p>
+								</div>	
+							</li>
+						</ul>
+	  				</div>
+  				</div>  				
+  			</div>
 		</div>  		
   	</div>
   </body>
