@@ -16,7 +16,10 @@
  //       };
  //       return pinS;
 	//  }
-	
+		var windowWidth;
+		var w = 250;
+		var w = document.documentElement.clientWidth;//获取页面可见高度 
+		var boxW = Math.floor(w/100);//每1%所指定宽度
 		window.onload=function(){  
              changeDivHeight();  
         }  
@@ -24,16 +27,28 @@
         window.onresize=function(){  
              changeDivHeight();  
         }  
-        function changeDivHeight(){               
-            var w = document.documentElement.clientWidth;//获取页面可见高度  
-            var boxW = w/100;
-            console.log(w)
+
+        function changeDivHeight(){ 
+            // var boxW = Math.floor(w/100);
+            // console.log(w)
             document.getElementById("main").style.width=w-(boxW*39)+"px";
-            console.log(w-(boxW*39)+".....")  
+            windowWidth = w-(boxW*39);
+            console.log(windowWidth)
 		}
 
-	    // //每行中能容纳的展示框个数【窗口宽度除以一个块框宽度】
-	    // var cols = Math.floor(($( window ).width()-30) / w );
+		//每行中能容纳的展示框个数【窗口宽度除以一个块框宽度】
+		var cols = Math.floor((w-(boxW*39))/250);
+		console.log(cols)
+		//给ul设置定位为relative，下面的每个li设置为absolute，
+		//  然后去掉margin-bottom与margin-right，然后通过设置left与top来控制每个的li位置
+
+		//1.获取到ul下所有的li，然后给对应的li添加样式
+
+		
+		
+
+		//取得展示框对象
+    	// var $boxs = $("#main>div");
 	    // //给最外围的main元素设置宽度和外边距
 	    // $('#main').width(w*cols).css('margin','o auto');
 	    // //用于存储 每列中的所有块框相加的高度。
